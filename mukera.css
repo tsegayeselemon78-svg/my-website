@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #222222;
+    background-color: #f4f6f9;
+}
+.navbar {
+    display: block;
+    width: 100%;
+    background-color: #1a237e;
+    padding: 0 24px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end; /* aligns nav items to the right */
+}
+
+.navbar li a {
+    display: block;
+    padding: 14px 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar li a:hover {
+    background-color:green;
+    border-radius: 4px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dde2e8;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ticker-wrap {
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.ticker-text {
+    display: inline-block;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #1a237e;
+    animation: slide-left 14s linear infinite;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.content,
+.form-section {
+    max-width: 960px;
+    margin: 24px auto;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.form-section h2 {
+    margin-top: 0;
+    color: #1a237e;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+    flex: 1 1 200px;
+}
+
+.flex-2 {
+    flex: 2 1 260px;
+}
+
+.flex-1 {
+    flex: 1 1 160px;
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+input[type="text"],
+select {
+    padding: 10px 12px;
+    border: 1px solid #c5ccd6;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+}
+
+.submit-btn {
+    padding: 12px 24px;
+    background-color: #1a237e;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color:purple;
+
+}

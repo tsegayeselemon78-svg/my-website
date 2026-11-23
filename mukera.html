@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Debark University - Computer Science</title>
+    <link rel="stylesheet" type="text/css" href="mukera.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+         <li><a href="about.html">About</a></li>
+            <li><a href="skill.html">Skill</a></li>
+             <li><a href="w3.html">w3 school</a></li>
+            <li><a href="gallery.html">Media Gallery</a></li>
+            <li><a href="My portfolio.html">My portfolio</a></li>
+             <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <header class="header-container">
+        <img src="selemon.jpg" alt="Debark University Logo" class="logo">
+        <div class="ticker-wrap">
+            <h1 class="ticker-text">Welcome to Selemon Website</h1>
+        </div>
+    </header>
+
+    <main class="content">
+        <p>
+            Debark University is a public higher education institution located in Debark town,
+            North Gondar Zone, Amhara Region, Ethiopia.
+        </p>
+        <p>
+            The university is committed to providing quality education, conducting problem-solving research,
+            and delivering community services to support the social and economic development of the country.
+        </p>
+
+        <div class="media-container">
+            <div class="media-item">
+                <h3>Introductory Video</h3>
+                <video controls width="320" height="240">
+                    <source src="vedio of.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="media-item">
+                <h3>University Audio/Song</h3>
+                <audio controls>
+                    <source src="music.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </main>
+
+    <section class="form-section">
+        <h2>Student Department Selection &amp; Registration</h2>
+        <form action="#" method="POST" class="registration-form">
+            <div class="form-row compact-row">
+                <div class="form-group flex-2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required>
+                </div>
+
+                <div class="form-group flex-1">
+                    <label for="studentid">Student ID:</label>
+                    <input type="text" id="studentid" name="studentid" placeholder="ID" required>
+                </div>
+
+                <div class="form-group flex-1">
+                    <label for="year">Academic Year:</label>
+                    <select id="year" name="year" required>
+                        <option value="" disabled selected>Select Year</option>
+                        <option value="1">1st Year</option>
+                        <option value="2">2nd Year</option>
+                        <option value="3">3rd Year</option>
+                        <option value="4">4th Year</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+            </div>
+                <label for="department">Select Department:</label><br>
+                <select id="department" name="department" required>
+                    <option value="" disabled selected>Choose Departmen</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="se">Software Engineering</option>
+                    <option value="it">Information Technology</option>
+                    <option value="is">Information Systems</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Register Now</button>
+        </form>
+    </section>
+</body>
+</html>
